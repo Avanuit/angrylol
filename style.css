@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+#ui {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    color: #2c3e50;
+    pointer-events: none;
+    text-shadow: 1px 1px 2px white;
+}
+
+h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
+p { font-weight: bold; }
