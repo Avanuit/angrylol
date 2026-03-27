@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angry lol</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <title>Angry Birds 3D</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="ui">
-        <h1>angry XD</h1>
-        <p>A / S: Ángulo | Mantener ESPACIO: Cargar Fuerza | R: Reiniciar</p>
-        <div id="force-container">
-            <div id="force-bar"></div>
-        </div>
+
+  <div id="hud">
+    <div id="score-box">
+      <div id="score-label">Score</div>
+      <div id="score-val">0</div>
     </div>
-    <script type="module" src="main.js"></script>
+    <div id="birds-queue"></div>
+  </div>
+
+  <div id="force-container">
+    <div id="force-label">POWER</div>
+    <div id="force-track"><div id="force-bar"></div></div>
+  </div>
+
+  <div id="controls-hint">
+    <kbd>A</kbd> / <kbd>S</kbd> — Angulo<br>
+    <kbd>ESPACIO</kbd> — Cargar / Lanzar<br>
+    <kbd>R</kbd> — Reiniciar nivel
+  </div>
+
+  <div id="overlay">
+    <h1>Angry Birds 3D</h1>
+    <p>Derriba todas las estructuras</p>
+    <button id="btn-start">JUGAR</button>
+  </div>
+
+  <script type="importmap">
+    { "imports": { "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js" } }
+  </script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
